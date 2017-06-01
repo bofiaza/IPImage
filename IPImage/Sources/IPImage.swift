@@ -11,13 +11,13 @@ import UIKit
 /**
  The class that generates circular UIImage objects.
  */
-class IPImage: NSObject {
+public class IPImage: NSObject {
     
     //MARK: - Properties
     /**
      Input text. The first letter from the first and last word (depending on number of words) will be text at the center of the image.
     */
-    var text:String = ""
+    public var text:String = ""
     
     private var _radius:Double = 0
     private var _length:Double = 0
@@ -25,7 +25,7 @@ class IPImage: NSObject {
     /**
      Radius of the circular image
     */
-    var radius:Double {
+    public var radius:Double {
         get {
             return _radius
         }
@@ -42,27 +42,27 @@ class IPImage: NSObject {
      
          UIFont.systemFont(ofSize: CGFloat(radius))
     */
-    var font:UIFont?
+    public var font:UIFont?
     
     /**
      Color for the text.
      
      If it is not initialized before `generateImage()`, it will default to `UIColor.white`
      */
-    var textColor:UIColor?
+    public var textColor:UIColor?
     
     /**
      Fill color of the circular image.
      
      If it is not initialized before `generateImage()`, it will default to `UIColor.gray`
      */
-    var backgroundColor:UIColor?
+    public var backgroundColor:UIColor?
     
     //MARK: - Initailization
     /**
      Initialize an IPImage object. The default value of `radius` is 25. `text` is empty.
     */
-    override convenience init() {
+    public convenience override init() {
         self.init(text: "", radius: 25)
     }
     
@@ -73,7 +73,7 @@ class IPImage: NSObject {
          - text: Source of the initials
          - radius: Circular image radius
      */
-    convenience init(text: String, radius: Double) {
+    public convenience init(text: String, radius: Double) {
         self.init(text: text, radius: radius, font: nil)
     }
     
@@ -85,7 +85,7 @@ class IPImage: NSObject {
          - radius: Circular image radius
          - font: Font for the text at the center
      */
-    convenience init(text: String, radius: Double, font: UIFont?) {
+    public convenience init(text: String, radius: Double, font: UIFont?) {
         self.init(text: text, radius: radius, font: font, textColor: nil, randomBackgroundColor: false)
     }
     
@@ -98,7 +98,7 @@ class IPImage: NSObject {
          - textColor: Color of the text at the center
          - randomBackgroundColor: Randomized fill color
      */
-    init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, randomBackgroundColor: Bool) {
+    public init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, randomBackgroundColor: Bool) {
         super.init()
         
         self.text = text
@@ -127,7 +127,7 @@ class IPImage: NSObject {
          - textColor: Color of the text at the center
          - backgroundColor: Randomized fill color
      */
-    init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, backgroundColor: UIColor?) {
+    public init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, backgroundColor: UIColor?) {
         super.init()
         
         self.text = text
@@ -215,7 +215,7 @@ class IPImage: NSObject {
      
      - Returns: String which is one or two charaters long depending on the number of words in `text`.
     */
-    func initials() -> String {
+    public func initials() -> String {
         
         let names = text.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: " ")
             
@@ -249,7 +249,7 @@ class IPImage: NSObject {
      
      - Returns: Circular image
     */
-    func generateImage() -> UIImage? {
+    public func generateImage() -> UIImage? {
         
         let view = setupView()
         
