@@ -14,6 +14,7 @@
 		488632191EE01ABA00C3F18C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488632171EE01ABA00C3F18C /* LaunchScreen.storyboard */; };
 		488632241EE01ABB00C3F18C /* IPImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488632231EE01ABB00C3F18C /* IPImageTests.swift */; };
 		4886322F1EE01ABB00C3F18C /* IPImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4886322E1EE01ABB00C3F18C /* IPImageUITests.swift */; };
+		4886323E1EE01B6D00C3F18C /* IPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4886323D1EE01B6D00C3F18C /* IPImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4886322A1EE01ABB00C3F18C /* IPImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4886322E1EE01ABB00C3F18C /* IPImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPImageUITests.swift; sourceTree = "<group>"; };
 		488632301EE01ABB00C3F18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4886323D1EE01B6D00C3F18C /* IPImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IPImage.swift; path = Sources/IPImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		4886320D1EE01ABA00C3F18C /* IPImage */ = {
 			isa = PBXGroup;
 			children = (
+				4886323C1EE01B4E00C3F18C /* Sources */,
 				4886320E1EE01ABA00C3F18C /* AppDelegate.swift */,
 				488632101EE01ABA00C3F18C /* ViewController.swift */,
 				488632121EE01ABA00C3F18C /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				488632301EE01ABB00C3F18C /* Info.plist */,
 			);
 			path = IPImageUITests;
+			sourceTree = "<group>";
+		};
+		4886323C1EE01B4E00C3F18C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4886323D1EE01B6D00C3F18C /* IPImage.swift */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			files = (
 				488632111EE01ABA00C3F18C /* ViewController.swift in Sources */,
 				4886320F1EE01ABA00C3F18C /* AppDelegate.swift in Sources */,
+				4886323E1EE01B6D00C3F18C /* IPImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
