@@ -13,5 +13,6 @@ IPImage aims to be an easy way to generate placeholder image for your UIViewCont
   s.ios.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/bofiaza/IPImage.git", :tag => "#{s.version}" }
   s.source_files  = "IPImage/Sources/**/*.{swift}"
+  s.documentation_url = "https://github.com/bofiaza/IPImage/blob/master/docs/index.html"
 
 end
