@@ -13,6 +13,7 @@ import UIKit
  */
 class IPImage: NSObject {
     
+    //MARK: - Properties
     /**
      Input text. The first letter from the first and last word (depending on number of words) will be text at the center of the image.
     */
@@ -57,6 +58,7 @@ class IPImage: NSObject {
      */
     var backgroundColor:UIColor?
     
+    //MARK: - Initailization
     /**
      Initialize an IPImage object. The default value of `radius` is 25. `text` is empty.
     */
@@ -193,24 +195,25 @@ class IPImage: NSObject {
         
     }
     
-    //MARK: - Text
+    //MARK: - Text Generation
     
     /**
-     Generates the initials from the value of `text`.
-     
-     - Returns: String which is one or two charaters long depending on the number of words in `text`. For example:
+     Generates the initials from the value of `text`. For example:
      
          text = "Harry"
      
-     the result will be: *H*. If:
+     the result will be: **H**. If:
      
          text = "Harry Potter"
      
-     the result will be: *HP*. And, if:
+     the result will be: **HP**. And, if:
      
          text = "Harry Potter Jr."
      
-     the result will be *HJ*.
+     the result will be **HJ**.
+     
+     
+     - Returns: String which is one or two charaters long depending on the number of words in `text`.
     */
     func initials() -> String {
         
@@ -239,7 +242,7 @@ class IPImage: NSObject {
         
     }
     
-    //MARK: - Generate image
+    //MARK: - Image Generation
     
     /**
      Call to generate the resulting image.
