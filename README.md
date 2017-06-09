@@ -12,3 +12,4 @@ An easy way to generate circular placeholder images.
 let ipimage = IPImage(text: "Neil Patrick Harris", radius: 30, font: UIFont(name: "Cochin-Italic", size: 30), textColor: nil, randomBackgroundColor: true)
 imageView.image = ipimage.generateImage()
 ```
+See ![documentation](http://cocoadocs.org/docsets/IPImage/).
