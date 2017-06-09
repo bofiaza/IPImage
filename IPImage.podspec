@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "IPImage"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "An easy way to generate circular placeholder images."
   s.description  = <<-DESC
 IPImage aims to be an easy way to generate placeholder image for your UIViewController (or anywhere you might need an UIImage object). Just provide the text, size, and colors. IPImage is useful for directory-like views.
